@@ -1,0 +1,82 @@
+﻿Build started 12/1/2012 12:02:34 AM.
+     1>Project "C:\drawcoder\opensource\github\ddengine\ddengine-project\ddengine.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Icode\win32 /Icode /Iinclude\win32\include /Iinclude\win32 /Iinclude\PowerVR /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\drawcoder\opensource\github\ddengine\ddengine-project\build\Debug-win32\\" /Fd"C:\drawcoder\opensource\github\ddengine\ddengine-project\build\Debug-win32\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt code\Camera.cpp code\FrameBuffer.cpp code\Renderer.cpp code\RenderingEngineES1.cpp code\win32\GLContext.cpp code\Timer.cpp code\ApplicationEngine.cpp code\Game2D.cpp code\GameBase.cpp code\Scene.cpp code\Mutex.cpp code\Thread.cpp code\ThreadUtil.cpp code\UploadThread.cpp code\WebRequestThreaded.cpp
+         WebRequestThreaded.cpp
+         UploadThread.cpp
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\uploadthread.cpp(38): warning C4244: 'argument' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+         ThreadUtil.cpp
+         Thread.cpp
+         Mutex.cpp
+         Scene.cpp
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\scene.cpp(2): fatal error C1083: Cannot open include file: 'IScene.h': No such file or directory
+         GameBase.cpp
+         Game2D.cpp
+         ApplicationEngine.cpp
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\iresourcemanager.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\parametricsurface.h(76): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\parametricsurface.h(82): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\parametricsurface.h(154): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\parametricsurface.h(155): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\vector.h(38): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+                 c:\drawcoder\opensource\github\ddengine\ddengine-project\code\vector.h(37) : while compiling class template member function 'dd::Vector2<T> dd::Vector2<T>::operator /(float) const'
+                 with
+                 [
+                     T=int
+                 ]
+                 c:\drawcoder\opensource\github\ddengine\ddengine-project\code\applicationengine.cpp(51) : see reference to function template instantiation 'dd::Vector2<T> dd::Vector2<T>::operator /(float) const' being compiled
+                 with
+                 [
+                     T=int
+                 ]
+                 c:\drawcoder\opensource\github\ddengine\ddengine-project\code\isurface.h(34) : see reference to class template instantiation 'dd::Vector2<T>' being compiled
+                 with
+                 [
+                     T=int
+                 ]
+         Timer.cpp
+         GLContext.cpp
+         RenderingEngineES1.cpp
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\iresourcemanager.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(35): error C3861: 'glGenRenderbuffersOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(36): error C2065: 'GL_RENDERBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(36): error C3861: 'glBindRenderbufferOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(195): error C2065: 'GL_RENDERBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(196): error C2065: 'GL_RENDERBUFFER_WIDTH_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(195): error C3861: 'glGetRenderbufferParameterivOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(197): error C2065: 'GL_RENDERBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(198): error C2065: 'GL_RENDERBUFFER_HEIGHT_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(197): error C3861: 'glGetRenderbufferParameterivOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(201): error C3861: 'glGenRenderbuffersOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(202): error C2065: 'GL_RENDERBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(202): error C3861: 'glBindRenderbufferOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(203): error C2065: 'GL_RENDERBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(203): error C2065: 'GL_DEPTH_COMPONENT16_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(203): error C3861: 'glRenderbufferStorageOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(208): error C3861: 'glGenFramebuffersOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(209): error C2065: 'GL_FRAMEBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(209): error C3861: 'glBindFramebufferOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(210): error C2065: 'GL_FRAMEBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(210): error C2065: 'GL_COLOR_ATTACHMENT0_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(211): error C2065: 'GL_RENDERBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(210): error C3861: 'glFramebufferRenderbufferOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(212): error C2065: 'GL_FRAMEBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(212): error C2065: 'GL_DEPTH_ATTACHMENT_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(213): error C2065: 'GL_RENDERBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(212): error C3861: 'glFramebufferRenderbufferOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(214): error C2065: 'GL_RENDERBUFFER_OES' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(214): error C3861: 'glBindRenderbufferOES': identifier not found
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(319): error C2065: 'GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(374): error C2065: 'GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(378): error C2065: 'GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(382): error C2065: 'GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG' : undeclared identifier
+     1>c:\drawcoder\opensource\github\ddengine\ddengine-project\code\renderingenginees1.cpp(386): error C2065: 'GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG' : undeclared identifier
+         Renderer.cpp
+         FrameBuffer.cpp
+         Camera.cpp
+         Generating Code...
+     1>Done Building Project "C:\drawcoder\opensource\github\ddengine\ddengine-project\ddengine.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:22.15
