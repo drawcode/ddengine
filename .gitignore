@@ -11,3 +11,6 @@
 *.lai
 *.la
 *.a
+
+/ddengine-project/UpgradeLog.XML
+/ddengine-project/UpgradeLog.htm
