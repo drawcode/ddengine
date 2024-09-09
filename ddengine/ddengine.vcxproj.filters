@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cleanup.cmd" />
+    <None Include="ddengine_PreFix.pch" />
+    <None Include="ddengine_PreFix.pch.m" />
+    <None Include="ddengine-Info.plist" />
+    <None Include="code\Interfaces.hpp_" />
+    <None Include="code\json_internalarray.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="code\json_internalmap.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="code\json_valueiterator.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="code\main.mm" />
+    <None Include="code\RenderingEngineES2.cpp_" />
+    <None Include="code\ResourceManager.mm" />
+    <None Include="code\Template.cpp_" />
+    <None Include="code\Template.h_" />
+    <None Include="code\touchos\DDEngineAppDelegate.m" />
+    <None Include="code\touchos\ddengine-Info.plist" />
+    <None Include="code\touchos\GLView.mm" />
+    <None Include="code\touchos\main.m" />
+    <None Include="code\ios\DDEngineAppDelegate.m" />
+    <None Include="code\ios\ddengine-Info.plist" />
+    <None Include="code\ios\GLView.mm" />
+    <None Include="code\ios\main.m" />
+    <None Include="data\Astronomy.pvr" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\openssl\aes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1_mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\blowfish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\comp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\conf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\conf_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\des.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\des_old.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dsa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dso.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dtls1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\e_os2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ebcdic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ecdh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ecdsa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\evp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\fips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\fips_rand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\hmac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\idea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\krb5_asn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\kssl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\lhash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\obj_mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\objects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ocsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\opensslconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\opensslv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ossl_typ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pem2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pq_compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pqueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ripemd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rsa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\safestack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\sha.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl23.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\store.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\symhacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\tls1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\tmdiff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\txt_db.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ui_compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509_vfy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509v3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\autolink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\DDHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\features.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\forwards.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\FrameBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Game2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\GameBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\GameHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\IAnimationEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\IApplicationEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\IMutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Interfaces.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\IRenderingEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\IResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\IScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ISurface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\json_batchallocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Lock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ParametricSurface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ThreadUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\UploadThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\WebRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\WebRequestThreaded.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\xdirent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\touchos\DDBuild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\touchos\DDEngineAppDelegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\touchos\GLView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\DDBuild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\GLContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\main _win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\freeglut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\freeglut_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\freeglut_std.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\GLee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\glframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\glfrustum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\gltools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\glut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\math3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\stopwatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\TriangleMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\VBOMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\win32\wgl\wglext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ios\DDEngineAppDelegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ios\GLView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTBackground.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTBoneBatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTDecompress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTFixedPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTGlobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTMathTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTMemoryFileSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTMisc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTModelPOD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTPrint3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTPrint3Ddat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTQuaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTResourceFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTShadowVol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTSingleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTTrans.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTTriStrip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\PVRTVertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\OGLES\OGLESTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\OGLES\PVRTContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\OGLES\PVRTFixedPointAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\OGLES\PVRTglesExt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerVR\OGLES\PVRTTextureAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32\include\GLES\egl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32\include\GLES\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32\include\GLES\glext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32\include\GLES\glplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32\include\EGL\egl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32\include\EGL\eglext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32\include\EGL\eglplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\ApplicationEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\FrameBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Game2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\GameBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\json_reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\json_value.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\json_writer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Lock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Mutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\RenderingEngine.ES2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\RenderingEngineES1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\RenderingEngineES2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\ThreadUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\UploadThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\WebRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\WebRequestThreaded.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\win32\GLContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\win32\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\win32\main_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\win32\wgl\GLee.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\win32\wgl\gltools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\win32\wgl\math3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\win32\wgl\TriangleMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\win32\wgl\VBOMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTBoneBatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTDecompress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTFixedPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTMatrixF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTMatrixX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTMisc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTModelPOD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTModelPODWriteH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTPrint3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTQuaternionF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTQuaternionX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTResourceFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTShadowVol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTTrans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTTriStrip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\PVRTVertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\OGLES\PVRTBackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\OGLES\PVRTglesExt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\OGLES\PVRTPrint3DAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PowerVR\OGLES\PVRTTextureAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="code\win32\wgl\freeglut_static.lib" />
+  </ItemGroup>
+</Project>

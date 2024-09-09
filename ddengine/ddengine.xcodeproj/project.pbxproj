@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F655E29E11D0898800FF9511 /* FrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E29711D0898800FF9511 /* FrameBuffer.cpp */; };
+		F655E29F11D0898800FF9511 /* RenderingEngineES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E29C11D0898800FF9511 /* RenderingEngineES1.cpp */; };
+		F655E2A311D089AB00FF9511 /* ApplicationEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E2A111D089AB00FF9511 /* ApplicationEngine.cpp */; };
+		F655E31711D66D6C00FF9511 /* Lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E30F11D66D6C00FF9511 /* Lock.cpp */; };
+		F655E31811D66D6C00FF9511 /* Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E31111D66D6C00FF9511 /* Mutex.cpp */; };
+		F655E31911D66D6C00FF9511 /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E31311D66D6C00FF9511 /* Thread.cpp */; };
+		F655E31A11D66D6C00FF9511 /* ThreadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E31511D66D6C00FF9511 /* ThreadUtil.cpp */; };
+		F655E31D11D66D9000FF9511 /* ResourceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F655E31C11D66D9000FF9511 /* ResourceManager.mm */; };
+		F655E32811D66DBE00FF9511 /* UploadThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E32011D66DBE00FF9511 /* UploadThread.cpp */; };
+		F655E32911D66DBE00FF9511 /* WebRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E32211D66DBE00FF9511 /* WebRequest.cpp */; };
+		F655E39E11D6850000FF9511 /* WebRequestThreaded.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655E39D11D6850000FF9511 /* WebRequestThreaded.cpp */; };
+		F655E3DE11D6875F00FF9511 /* libcrypto_i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3DA11D6875F00FF9511 /* libcrypto_i386.a */; };
+		F655E3E011D6875F00FF9511 /* libssl_i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3DC11D6875F00FF9511 /* libssl_i386.a */; };
+		F655E3EE11D687FE00FF9511 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3ED11D687FE00FF9511 /* AudioToolbox.framework */; };
+		F655E3F011D687FE00FF9511 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3EF11D687FE00FF9511 /* CoreFoundation.framework */; };
+		F655E3F211D687FE00FF9511 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3F111D687FE00FF9511 /* CoreGraphics.framework */; };
+		F655E3F411D687FE00FF9511 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3F311D687FE00FF9511 /* CoreLocation.framework */; };
+		F655E3F611D687FE00FF9511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3F511D687FE00FF9511 /* Foundation.framework */; };
+		F655E3F811D687FE00FF9511 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3F711D687FE00FF9511 /* GameKit.framework */; };
+		F655E3FA11D687FE00FF9511 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3F911D687FE00FF9511 /* MediaPlayer.framework */; };
+		F655E3FC11D687FE00FF9511 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3FB11D687FE00FF9511 /* OpenAL.framework */; };
+		F655E3FE11D687FE00FF9511 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3FD11D687FE00FF9511 /* OpenGLES.framework */; };
+		F655E40011D687FE00FF9511 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E3FF11D687FE00FF9511 /* QuartzCore.framework */; };
+		F655E40211D687FE00FF9511 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E40111D687FE00FF9511 /* StoreKit.framework */; };
+		F655E40411D687FE00FF9511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655E40311D687FE00FF9511 /* UIKit.framework */; };
+		F657311C119BC09300D99C6E /* ddengine-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6573110119BC09300D99C6E /* ddengine-Info.plist */; };
+		F657311D119BC09300D99C6E /* DDEngineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6573112119BC09300D99C6E /* DDEngineAppDelegate.m */; };
+		F6573121119BC09300D99C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F657311A119BC09300D99C6E /* main.m */; };
+		F657324D119F9C0200D99C6E /* Game2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6573246119F9C0200D99C6E /* Game2D.cpp */; };
+		F657324E119F9C0200D99C6E /* GameBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6573248119F9C0200D99C6E /* GameBase.cpp */; };
+		F657324F119F9C0200D99C6E /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F657324B119F9C0200D99C6E /* Timer.cpp */; };
+		F65732DD11A809F700D99C6E /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F65732D911A809F700D99C6E /* Camera.cpp */; };
+		F65732DE11A809F700D99C6E /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F65732DB11A809F700D99C6E /* Renderer.cpp */; };
+		F67AA90911D7F7E0005FEB47 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F67AA90811D7F7E0005FEB47 /* GLView.mm */; };
+		F67AAA6111D8C28C005FEB47 /* UI_WorldMap.png in Resources */ = {isa = PBXBuildFile; fileRef = F67AAA6011D8C28C005FEB47 /* UI_WorldMap.png */; };
+		F67AAB9B11DF0706005FEB47 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F67AAB9911DF0706005FEB47 /* Default.png */; };
+		F67AAB9C11DF0706005FEB47 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F67AAB9A11DF0706005FEB47 /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F655E29611D0898800FF9511 /* Box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Box.h; path = code/Box.h; sourceTree = "<group>"; };
+		F655E29711D0898800FF9511 /* FrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FrameBuffer.cpp; path = code/FrameBuffer.cpp; sourceTree = "<group>"; };
+		F655E29811D0898800FF9511 /* FrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrameBuffer.h; path = code/FrameBuffer.h; sourceTree = "<group>"; };
+		F655E29911D0898800FF9511 /* IRenderingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRenderingEngine.h; path = code/IRenderingEngine.h; sourceTree = "<group>"; };
+		F655E29A11D0898800FF9511 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix.h; path = code/Matrix.h; sourceTree = "<group>"; };
+		F655E29B11D0898800FF9511 /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quaternion.h; path = code/Quaternion.h; sourceTree = "<group>"; };
+		F655E29C11D0898800FF9511 /* RenderingEngineES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngineES1.cpp; path = code/RenderingEngineES1.cpp; sourceTree = "<group>"; };
+		F655E29D11D0898800FF9511 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector.h; path = code/Vector.h; sourceTree = "<group>"; };
+		F655E2A111D089AB00FF9511 /* ApplicationEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApplicationEngine.cpp; path = code/ApplicationEngine.cpp; sourceTree = "<group>"; };
+		F655E2A211D089AB00FF9511 /* IApplicationEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IApplicationEngine.h; path = code/IApplicationEngine.h; sourceTree = "<group>"; };
+		F655E30E11D66D6C00FF9511 /* IMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMutex.h; path = code/IMutex.h; sourceTree = "<group>"; };
+		F655E30F11D66D6C00FF9511 /* Lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Lock.cpp; path = code/Lock.cpp; sourceTree = "<group>"; };
+		F655E31011D66D6C00FF9511 /* Lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lock.h; path = code/Lock.h; sourceTree = "<group>"; };
+		F655E31111D66D6C00FF9511 /* Mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Mutex.cpp; path = code/Mutex.cpp; sourceTree = "<group>"; };
+		F655E31211D66D6C00FF9511 /* Mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mutex.h; path = code/Mutex.h; sourceTree = "<group>"; };
+		F655E31311D66D6C00FF9511 /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Thread.cpp; path = code/Thread.cpp; sourceTree = "<group>"; };
+		F655E31411D66D6C00FF9511 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Thread.h; path = code/Thread.h; sourceTree = "<group>"; };
+		F655E31511D66D6C00FF9511 /* ThreadUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadUtil.cpp; path = code/ThreadUtil.cpp; sourceTree = "<group>"; };
+		F655E31611D66D6C00FF9511 /* ThreadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadUtil.h; path = code/ThreadUtil.h; sourceTree = "<group>"; };
+		F655E31B11D66D9000FF9511 /* IResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IResourceManager.h; path = code/IResourceManager.h; sourceTree = "<group>"; };
+		F655E31C11D66D9000FF9511 /* ResourceManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ResourceManager.mm; path = code/ResourceManager.mm; sourceTree = "<group>"; };
+		F655E31F11D66DA300FF9511 /* IAnimationEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAnimationEngine.h; path = code/IAnimationEngine.h; sourceTree = "<group>"; };
+		F655E32011D66DBE00FF9511 /* UploadThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UploadThread.cpp; path = code/UploadThread.cpp; sourceTree = "<group>"; };
+		F655E32111D66DBE00FF9511 /* UploadThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UploadThread.h; path = code/UploadThread.h; sourceTree = "<group>"; };
+		F655E32211D66DBE00FF9511 /* WebRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WebRequest.cpp; path = code/WebRequest.cpp; sourceTree = "<group>"; };
+		F655E32311D66DBE00FF9511 /* WebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebRequest.h; path = code/WebRequest.h; sourceTree = "<group>"; };
+		F655E32611D66DBE00FF9511 /* WebRequestThreaded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebRequestThreaded.h; path = code/WebRequestThreaded.h; sourceTree = "<group>"; };
+		F655E32D11D66DCD00FF9511 /* ISurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISurface.h; path = code/ISurface.h; sourceTree = "<group>"; };
+		F655E39D11D6850000FF9511 /* WebRequestThreaded.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WebRequestThreaded.cpp; path = code/WebRequestThreaded.cpp; sourceTree = "<group>"; };
+		F655E3D911D6875F00FF9511 /* libcrypto_arm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto_arm.a; path = lib/touchos/libcrypto_arm.a; sourceTree = "<group>"; };
+		F655E3DA11D6875F00FF9511 /* libcrypto_i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto_i386.a; path = lib/touchos/libcrypto_i386.a; sourceTree = "<group>"; };
+		F655E3DB11D6875F00FF9511 /* libssl_arm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl_arm.a; path = lib/touchos/libssl_arm.a; sourceTree = "<group>"; };
+		F655E3DC11D6875F00FF9511 /* libssl_i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl_i386.a; path = lib/touchos/libssl_i386.a; sourceTree = "<group>"; };
+		F655E3ED11D687FE00FF9511 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = iphoneos3.0/System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
+		F655E3EF11D687FE00FF9511 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = iphoneos3.0/System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<group>"; };
+		F655E3F111D687FE00FF9511 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = iphoneos3.0/System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<group>"; };
+		F655E3F311D687FE00FF9511 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = iphoneos3.0/System/Library/Frameworks/CoreLocation.framework; sourceTree = "<group>"; };
+		F655E3F511D687FE00FF9511 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = iphoneos3.0/System/Library/Frameworks/Foundation.framework; sourceTree = "<group>"; };
+		F655E3F711D687FE00FF9511 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = iphoneos3.0/System/Library/Frameworks/GameKit.framework; sourceTree = "<group>"; };
+		F655E3F911D687FE00FF9511 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = iphoneos3.0/System/Library/Frameworks/MediaPlayer.framework; sourceTree = "<group>"; };
+		F655E3FB11D687FE00FF9511 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = iphoneos3.0/System/Library/Frameworks/OpenAL.framework; sourceTree = "<group>"; };
+		F655E3FD11D687FE00FF9511 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = iphoneos3.0/System/Library/Frameworks/OpenGLES.framework; sourceTree = "<group>"; };
+		F655E3FF11D687FE00FF9511 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = iphoneos3.0/System/Library/Frameworks/QuartzCore.framework; sourceTree = "<group>"; };
+		F655E40111D687FE00FF9511 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = iphoneos3.0/System/Library/Frameworks/StoreKit.framework; sourceTree = "<group>"; };
+		F655E40311D687FE00FF9511 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = iphoneos3.0/System/Library/Frameworks/UIKit.framework; sourceTree = "<group>"; };
+		F6573110119BC09300D99C6E /* ddengine-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ddengine-Info.plist"; path = "code/touchos/ddengine-Info.plist"; sourceTree = "<group>"; };
+		F6573111119BC09300D99C6E /* DDEngineAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDEngineAppDelegate.h; path = code/touchos/DDEngineAppDelegate.h; sourceTree = "<group>"; };
+		F6573112119BC09300D99C6E /* DDEngineAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDEngineAppDelegate.m; path = code/touchos/DDEngineAppDelegate.m; sourceTree = "<group>"; };
+		F657311A119BC09300D99C6E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = code/touchos/main.m; sourceTree = "<group>"; };
+		F6573128119BC0B300D99C6E /* DDHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHeader.h; path = code/DDHeader.h; sourceTree = "<group>"; };
+		F6573149119BC16000D99C6E /* ddengine_PreFix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ddengine_PreFix.pch; sourceTree = "<group>"; };
+		F6573183119BDAB400D99C6E /* DDBuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDBuild.h; path = code/touchos/DDBuild.h; sourceTree = "<group>"; };
+		F6573246119F9C0200D99C6E /* Game2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game2D.cpp; path = code/Game2D.cpp; sourceTree = "<group>"; };
+		F6573247119F9C0200D99C6E /* Game2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game2D.h; path = code/Game2D.h; sourceTree = "<group>"; };
+		F6573248119F9C0200D99C6E /* GameBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameBase.cpp; path = code/GameBase.cpp; sourceTree = "<group>"; };
+		F6573249119F9C0200D99C6E /* GameBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameBase.h; path = code/GameBase.h; sourceTree = "<group>"; };
+		F657324A119F9C0200D99C6E /* GameHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameHeader.h; path = code/GameHeader.h; sourceTree = "<group>"; };
+		F657324B119F9C0200D99C6E /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = code/Timer.cpp; sourceTree = "<group>"; };
+		F657324C119F9C0200D99C6E /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = code/Timer.h; sourceTree = "<group>"; };
+		F65732D911A809F700D99C6E /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = code/Camera.cpp; sourceTree = "<group>"; };
+		F65732DA11A809F700D99C6E /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = code/Camera.h; sourceTree = "<group>"; };
+		F65732DB11A809F700D99C6E /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Renderer.cpp; path = code/Renderer.cpp; sourceTree = "<group>"; };
+		F65732DC11A809F700D99C6E /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Renderer.h; path = code/Renderer.h; sourceTree = "<group>"; };
+		F67AA90711D7F7E0005FEB47 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = code/touchos/GLView.h; sourceTree = "<group>"; };
+		F67AA90811D7F7E0005FEB47 /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLView.mm; path = code/touchos/GLView.mm; sourceTree = "<group>"; };
+		F67AAA6011D8C28C005FEB47 /* UI_WorldMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UI_WorldMap.png; path = "../zombie-pirates/data/zombie-pirates/sprites/UI_WorldMap.png"; sourceTree = SOURCE_ROOT; };
+		F67AAB1511DB3E36005FEB47 /* ddengine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddengine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67AAB7C11DB52D7005FEB47 /* ParametricSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParametricSurface.h; path = code/ParametricSurface.h; sourceTree = "<group>"; };
+		F67AAB9911DF0706005FEB47 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = data/Default.png; sourceTree = "<group>"; };
+		F67AAB9A11DF0706005FEB47 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = data/Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F655E3DE11D6875F00FF9511 /* libcrypto_i386.a in Frameworks */,
+				F655E3E011D6875F00FF9511 /* libssl_i386.a in Frameworks */,
+				F655E3EE11D687FE00FF9511 /* AudioToolbox.framework in Frameworks */,
+				F655E3F011D687FE00FF9511 /* CoreFoundation.framework in Frameworks */,
+				F655E3F211D687FE00FF9511 /* CoreGraphics.framework in Frameworks */,
+				F655E3F411D687FE00FF9511 /* CoreLocation.framework in Frameworks */,
+				F655E3F611D687FE00FF9511 /* Foundation.framework in Frameworks */,
+				F655E3F811D687FE00FF9511 /* GameKit.framework in Frameworks */,
+				F655E3FA11D687FE00FF9511 /* MediaPlayer.framework in Frameworks */,
+				F655E3FC11D687FE00FF9511 /* OpenAL.framework in Frameworks */,
+				F655E3FE11D687FE00FF9511 /* OpenGLES.framework in Frameworks */,
+				F655E40011D687FE00FF9511 /* QuartzCore.framework in Frameworks */,
+				F655E40211D687FE00FF9511 /* StoreKit.framework in Frameworks */,
+				F655E40411D687FE00FF9511 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F67AAB1511DB3E36005FEB47 /* ddengine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F67AAB1C11DB3E50005FEB47 /* Resources */,
+				F67AAA5F11D8C26A005FEB47 /* data */,
+				F655E3D811D6873000FF9511 /* libs */,
+				F65730FA118E3C1F00D99C6E /* code */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F655E3ED11D687FE00FF9511 /* AudioToolbox.framework */,
+				F655E3EF11D687FE00FF9511 /* CoreFoundation.framework */,
+				F655E3F111D687FE00FF9511 /* CoreGraphics.framework */,
+				F655E3F311D687FE00FF9511 /* CoreLocation.framework */,
+				F655E3F511D687FE00FF9511 /* Foundation.framework */,
+				F655E3F711D687FE00FF9511 /* GameKit.framework */,
+				F655E3F911D687FE00FF9511 /* MediaPlayer.framework */,
+				F655E3FB11D687FE00FF9511 /* OpenAL.framework */,
+				F655E3FD11D687FE00FF9511 /* OpenGLES.framework */,
+				F655E3FF11D687FE00FF9511 /* QuartzCore.framework */,
+				F655E40111D687FE00FF9511 /* StoreKit.framework */,
+				F655E40311D687FE00FF9511 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F655E2A011D0899200FF9511 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				F655E2A111D089AB00FF9511 /* ApplicationEngine.cpp */,
+				F655E2A211D089AB00FF9511 /* IApplicationEngine.h */,
+				F6573246119F9C0200D99C6E /* Game2D.cpp */,
+				F6573247119F9C0200D99C6E /* Game2D.h */,
+				F6573248119F9C0200D99C6E /* GameBase.cpp */,
+				F6573249119F9C0200D99C6E /* GameBase.h */,
+				F657324A119F9C0200D99C6E /* GameHeader.h */,
+			);
+			name = game;
+			sourceTree = "<group>";
+		};
+		F655E30A11D66D2D00FF9511 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				F655E39D11D6850000FF9511 /* WebRequestThreaded.cpp */,
+				F655E32011D66DBE00FF9511 /* UploadThread.cpp */,
+				F655E32111D66DBE00FF9511 /* UploadThread.h */,
+				F655E32211D66DBE00FF9511 /* WebRequest.cpp */,
+				F655E32311D66DBE00FF9511 /* WebRequest.h */,
+				F655E32611D66DBE00FF9511 /* WebRequestThreaded.h */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		F655E30C11D66D3200FF9511 /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				F655E31B11D66D9000FF9511 /* IResourceManager.h */,
+				F655E31C11D66D9000FF9511 /* ResourceManager.mm */,
+			);
+			name = asset;
+			sourceTree = "<group>";
+		};
+		F655E30D11D66D3800FF9511 /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				F655E30E11D66D6C00FF9511 /* IMutex.h */,
+				F655E30F11D66D6C00FF9511 /* Lock.cpp */,
+				F655E31011D66D6C00FF9511 /* Lock.h */,
+				F655E31111D66D6C00FF9511 /* Mutex.cpp */,
+				F655E31211D66D6C00FF9511 /* Mutex.h */,
+				F655E31311D66D6C00FF9511 /* Thread.cpp */,
+				F655E31411D66D6C00FF9511 /* Thread.h */,
+				F655E31511D66D6C00FF9511 /* ThreadUtil.cpp */,
+				F655E31611D66D6C00FF9511 /* ThreadUtil.h */,
+			);
+			name = thread;
+			sourceTree = "<group>";
+		};
+		F655E31E11D66D9200FF9511 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				F655E31F11D66DA300FF9511 /* IAnimationEngine.h */,
+			);
+			name = animation;
+			sourceTree = "<group>";
+		};
+		F655E36111D6742200FF9511 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F655E37711D6749000FF9511 /* json-cpp */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		F655E37711D6749000FF9511 /* json-cpp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "json-cpp";
+			sourceTree = "<group>";
+		};
+		F655E3D811D6873000FF9511 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F655E3D911D6875F00FF9511 /* libcrypto_arm.a */,
+				F655E3DA11D6875F00FF9511 /* libcrypto_i386.a */,
+				F655E3DB11D6875F00FF9511 /* libssl_arm.a */,
+				F655E3DC11D6875F00FF9511 /* libssl_i386.a */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		F65730FA118E3C1F00D99C6E /* code */ = {
+			isa = PBXGroup;
+			children = (
+				F655E36111D6742200FF9511 /* data */,
+				F655E31E11D66D9200FF9511 /* animation */,
+				F655E30C11D66D3200FF9511 /* asset */,
+				F655E2A011D0899200FF9511 /* game */,
+				F655E30A11D66D2D00FF9511 /* network */,
+				F65732D811A809E000D99C6E /* render */,
+				F655E30D11D66D3800FF9511 /* thread */,
+				F6573250119F9C0700D99C6E /* util */,
+				F6573128119BC0B300D99C6E /* DDHeader.h */,
+				F65730FD118E3C4300D99C6E /* platform-ios */,
+			);
+			name = code;
+			sourceTree = "<group>";
+		};
+		F65730FD118E3C4300D99C6E /* platform-ios */ = {
+			isa = PBXGroup;
+			children = (
+				F67AA90711D7F7E0005FEB47 /* GLView.h */,
+				F67AA90811D7F7E0005FEB47 /* GLView.mm */,
+				F6573183119BDAB400D99C6E /* DDBuild.h */,
+				F6573110119BC09300D99C6E /* ddengine-Info.plist */,
+				F6573111119BC09300D99C6E /* DDEngineAppDelegate.h */,
+				F6573112119BC09300D99C6E /* DDEngineAppDelegate.m */,
+				F657311A119BC09300D99C6E /* main.m */,
+				F6573149119BC16000D99C6E /* ddengine_PreFix.pch */,
+			);
+			name = "platform-ios";
+			sourceTree = "<group>";
+		};
+		F6573250119F9C0700D99C6E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F657324B119F9C0200D99C6E /* Timer.cpp */,
+				F657324C119F9C0200D99C6E /* Timer.h */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		F65732D811A809E000D99C6E /* render */ = {
+			isa = PBXGroup;
+			children = (
+				F655E32D11D66DCD00FF9511 /* ISurface.h */,
+				F655E29611D0898800FF9511 /* Box.h */,
+				F655E29711D0898800FF9511 /* FrameBuffer.cpp */,
+				F655E29811D0898800FF9511 /* FrameBuffer.h */,
+				F655E29911D0898800FF9511 /* IRenderingEngine.h */,
+				F655E29A11D0898800FF9511 /* Matrix.h */,
+				F655E29B11D0898800FF9511 /* Quaternion.h */,
+				F655E29C11D0898800FF9511 /* RenderingEngineES1.cpp */,
+				F655E29D11D0898800FF9511 /* Vector.h */,
+				F65732D911A809F700D99C6E /* Camera.cpp */,
+				F65732DA11A809F700D99C6E /* Camera.h */,
+				F65732DB11A809F700D99C6E /* Renderer.cpp */,
+				F65732DC11A809F700D99C6E /* Renderer.h */,
+				F67AAB7C11DB52D7005FEB47 /* ParametricSurface.h */,
+			);
+			name = render;
+			sourceTree = "<group>";
+		};
+		F67AAA5F11D8C26A005FEB47 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F67AAB9911DF0706005FEB47 /* Default.png */,
+				F67AAB9A11DF0706005FEB47 /* Icon.png */,
+				F67AAA6011D8C28C005FEB47 /* UI_WorldMap.png */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		F67AAB1C11DB3E50005FEB47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ddengine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ddengine" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ddengine;
+			productName = ddengine;
+			productReference = F67AAB1511DB3E36005FEB47 /* ddengine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ddengine" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ddengine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F657311C119BC09300D99C6E /* ddengine-Info.plist in Resources */,
+				F67AAA6111D8C28C005FEB47 /* UI_WorldMap.png in Resources */,
+				F67AAB9B11DF0706005FEB47 /* Default.png in Resources */,
+				F67AAB9C11DF0706005FEB47 /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F657311D119BC09300D99C6E /* DDEngineAppDelegate.m in Sources */,
+				F6573121119BC09300D99C6E /* main.m in Sources */,
+				F657324D119F9C0200D99C6E /* Game2D.cpp in Sources */,
+				F657324E119F9C0200D99C6E /* GameBase.cpp in Sources */,
+				F657324F119F9C0200D99C6E /* Timer.cpp in Sources */,
+				F65732DD11A809F700D99C6E /* Camera.cpp in Sources */,
+				F65732DE11A809F700D99C6E /* Renderer.cpp in Sources */,
+				F655E29E11D0898800FF9511 /* FrameBuffer.cpp in Sources */,
+				F655E29F11D0898800FF9511 /* RenderingEngineES1.cpp in Sources */,
+				F655E2A311D089AB00FF9511 /* ApplicationEngine.cpp in Sources */,
+				F655E31711D66D6C00FF9511 /* Lock.cpp in Sources */,
+				F655E31811D66D6C00FF9511 /* Mutex.cpp in Sources */,
+				F655E31911D66D6C00FF9511 /* Thread.cpp in Sources */,
+				F655E31A11D66D6C00FF9511 /* ThreadUtil.cpp in Sources */,
+				F655E31D11D66D9000FF9511 /* ResourceManager.mm in Sources */,
+				F655E32811D66DBE00FF9511 /* UploadThread.cpp in Sources */,
+				F655E32911D66DBE00FF9511 /* WebRequest.cpp in Sources */,
+				F655E39E11D6850000FF9511 /* WebRequestThreaded.cpp in Sources */,
+				F67AA90911D7F7E0005FEB47 /* GLView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ddengine_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = _IPHONE;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					include,
+					include/PowerVR,
+				);
+				INFOPLIST_FILE = "ddengine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					lib/touchos,
+					lib,
+					"\"$(SRCROOT)/lib/touchos\"",
+				);
+				PRODUCT_NAME = ddengine;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ddengine_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = _IPHONE;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					include,
+					include/PowerVR,
+				);
+				INFOPLIST_FILE = "ddengine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					lib/touchos,
+					lib,
+					"\"$(SRCROOT)/lib/touchos\"",
+				);
+				PRODUCT_NAME = ddengine;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = mh_execute;
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = ddengine;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = ddengine;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ddengine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ddengine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
