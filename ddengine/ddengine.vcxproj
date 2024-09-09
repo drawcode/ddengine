@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c82cd0f4-c7a3-4e9f-b087-24ff8b517801}</ProjectGuid>
+    <RootNamespace>ddengine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="cleanup.cmd" />
+    <None Include="code\Interfaces.hpp_" />
+    <None Include="code\ios\ddengine-Info.plist" />
+    <None Include="code\ios\DDEngineAppDelegate.m" />
+    <None Include="code\ios\GLView.mm" />
+    <None Include="code\ios\main.m" />
+    <None Include="code\json_internalarray.inl" />
+    <None Include="code\json_internalmap.inl" />
+    <None Include="code\json_valueiterator.inl" />
+    <None Include="code\main.mm" />
+    <None Include="code\RenderingEngineES2.cpp_" />
+    <None Include="code\ResourceManager.mm" />
+    <None Include="code\Template.cpp_" />
+    <None Include="code\Template.h_" />
+    <None Include="code\touchos\ddengine-Info.plist" />
+    <None Include="code\touchos\DDEngineAppDelegate.m" />
+    <None Include="code\touchos\GLView.mm" />
+    <None Include="code\touchos\main.m" />
+    <None Include="data\Astronomy.pvr" />
+    <None Include="ddengine-Info.plist" />
+    <None Include="ddengine_PreFix.pch" />
+    <None Include="ddengine_PreFix.pch.m" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\autolink.h" />
+    <ClInclude Include="code\Box.h" />
+    <ClInclude Include="code\Camera.h" />
+    <ClInclude Include="code\config.h" />
+    <ClInclude Include="code\DDHeader.h" />
+    <ClInclude Include="code\features.h" />
+    <ClInclude Include="code\forwards.h" />
+    <ClInclude Include="code\FrameBuffer.h" />
+    <ClInclude Include="code\Game2D.h" />
+    <ClInclude Include="code\GameBase.h" />
+    <ClInclude Include="code\GameHeader.h" />
+    <ClInclude Include="code\IAnimationEngine.h" />
+    <ClInclude Include="code\IApplicationEngine.h" />
+    <ClInclude Include="code\IMutex.h" />
+    <ClInclude Include="code\Interfaces.hpp" />
+    <ClInclude Include="code\ios\DDEngineAppDelegate.h" />
+    <ClInclude Include="code\ios\GLView.h" />
+    <ClInclude Include="code\IRenderingEngine.h" />
+    <ClInclude Include="code\IResourceManager.h" />
+    <ClInclude Include="code\IScreen.h" />
+    <ClInclude Include="code\ISurface.h" />
+    <ClInclude Include="code\json.h" />
+    <ClInclude Include="code\json_batchallocator.h" />
+    <ClInclude Include="code\Lock.h" />
+    <ClInclude Include="code\Matrix.h" />
+    <ClInclude Include="code\Mutex.h" />
+    <ClInclude Include="code\ParametricSurface.h" />
+    <ClInclude Include="code\Quaternion.h" />
+    <ClInclude Include="code\reader.h" />
+    <ClInclude Include="code\Renderer.h" />
+    <ClInclude Include="code\Thread.h" />
+    <ClInclude Include="code\ThreadUtil.h" />
+    <ClInclude Include="code\Timer.h" />
+    <ClInclude Include="code\touchos\DDBuild.h" />
+    <ClInclude Include="code\touchos\DDEngineAppDelegate.h" />
+    <ClInclude Include="code\touchos\GLView.h" />
+    <ClInclude Include="code\UploadThread.h" />
+    <ClInclude Include="code\value.h" />
+    <ClInclude Include="code\Vector.h" />
+    <ClInclude Include="code\WebRequest.h" />
+    <ClInclude Include="code\WebRequestThreaded.h" />
+    <ClInclude Include="code\win32\DDBuild.h" />
+    <ClInclude Include="code\win32\GLContext.h" />
+    <ClInclude Include="code\win32\main _win32.h" />
+    <ClInclude Include="code\win32\main.h" />
+    <ClInclude Include="code\win32\wgl\freeglut.h" />
+    <ClInclude Include="code\win32\wgl\freeglut_ext.h" />
+    <ClInclude Include="code\win32\wgl\freeglut_std.h" />
+    <ClInclude Include="code\win32\wgl\GLee.h" />
+    <ClInclude Include="code\win32\wgl\glframe.h" />
+    <ClInclude Include="code\win32\wgl\glfrustum.h" />
+    <ClInclude Include="code\win32\wgl\gltools.h" />
+    <ClInclude Include="code\win32\wgl\glut.h" />
+    <ClInclude Include="code\win32\wgl\math3d.h" />
+    <ClInclude Include="code\win32\wgl\stopwatch.h" />
+    <ClInclude Include="code\win32\wgl\TriangleMesh.h" />
+    <ClInclude Include="code\win32\wgl\VBOMesh.h" />
+    <ClInclude Include="code\win32\wgl\wglext.h" />
+    <ClInclude Include="code\writer.h" />
+    <ClInclude Include="code\xdirent.h" />
+    <ClInclude Include="include\openssl\aes.h" />
+    <ClInclude Include="include\openssl\asn1.h" />
+    <ClInclude Include="include\openssl\asn1t.h" />
+    <ClInclude Include="include\openssl\asn1_mac.h" />
+    <ClInclude Include="include\openssl\bio.h" />
+    <ClInclude Include="include\openssl\blowfish.h" />
+    <ClInclude Include="include\openssl\bn.h" />
+    <ClInclude Include="include\openssl\buffer.h" />
+    <ClInclude Include="include\openssl\cast.h" />
+    <ClInclude Include="include\openssl\comp.h" />
+    <ClInclude Include="include\openssl\conf.h" />
+    <ClInclude Include="include\openssl\conf_api.h" />
+    <ClInclude Include="include\openssl\crypto.h" />
+    <ClInclude Include="include\openssl\des.h" />
+    <ClInclude Include="include\openssl\des_old.h" />
+    <ClInclude Include="include\openssl\dh.h" />
+    <ClInclude Include="include\openssl\dsa.h" />
+    <ClInclude Include="include\openssl\dso.h" />
+    <ClInclude Include="include\openssl\dtls1.h" />
+    <ClInclude Include="include\openssl\ebcdic.h" />
+    <ClInclude Include="include\openssl\ec.h" />
+    <ClInclude Include="include\openssl\ecdh.h" />
+    <ClInclude Include="include\openssl\ecdsa.h" />
+    <ClInclude Include="include\openssl\engine.h" />
+    <ClInclude Include="include\openssl\err.h" />
+    <ClInclude Include="include\openssl\evp.h" />
+    <ClInclude Include="include\openssl\e_os2.h" />
+    <ClInclude Include="include\openssl\fips.h" />
+    <ClInclude Include="include\openssl\fips_rand.h" />
+    <ClInclude Include="include\openssl\hmac.h" />
+    <ClInclude Include="include\openssl\idea.h" />
+    <ClInclude Include="include\openssl\krb5_asn.h" />
+    <ClInclude Include="include\openssl\kssl.h" />
+    <ClInclude Include="include\openssl\lhash.h" />
+    <ClInclude Include="include\openssl\md2.h" />
+    <ClInclude Include="include\openssl\md4.h" />
+    <ClInclude Include="include\openssl\md5.h" />
+    <ClInclude Include="include\openssl\objects.h" />
+    <ClInclude Include="include\openssl\obj_mac.h" />
+    <ClInclude Include="include\openssl\ocsp.h" />
+    <ClInclude Include="include\openssl\opensslconf.h" />
+    <ClInclude Include="include\openssl\opensslv.h" />
+    <ClInclude Include="include\openssl\ossl_typ.h" />
+    <ClInclude Include="include\openssl\pem.h" />
+    <ClInclude Include="include\openssl\pem2.h" />
+    <ClInclude Include="include\openssl\pkcs12.h" />
+    <ClInclude Include="include\openssl\pkcs7.h" />
+    <ClInclude Include="include\openssl\pqueue.h" />
+    <ClInclude Include="include\openssl\pq_compat.h" />
+    <ClInclude Include="include\openssl\rand.h" />
+    <ClInclude Include="include\openssl\rc2.h" />
+    <ClInclude Include="include\openssl\rc4.h" />
+    <ClInclude Include="include\openssl\ripemd.h" />
+    <ClInclude Include="include\openssl\rsa.h" />
+    <ClInclude Include="include\openssl\safestack.h" />
+    <ClInclude Include="include\openssl\sha.h" />
+    <ClInclude Include="include\openssl\ssl.h" />
+    <ClInclude Include="include\openssl\ssl2.h" />
+    <ClInclude Include="include\openssl\ssl23.h" />
+    <ClInclude Include="include\openssl\ssl3.h" />
+    <ClInclude Include="include\openssl\stack.h" />
+    <ClInclude Include="include\openssl\store.h" />
+    <ClInclude Include="include\openssl\symhacks.h" />
+    <ClInclude Include="include\openssl\tls1.h" />
+    <ClInclude Include="include\openssl\tmdiff.h" />
+    <ClInclude Include="include\openssl\txt_db.h" />
+    <ClInclude Include="include\openssl\ui.h" />
+    <ClInclude Include="include\openssl\ui_compat.h" />
+    <ClInclude Include="include\openssl\x509.h" />
+    <ClInclude Include="include\openssl\x509v3.h" />
+    <ClInclude Include="include\openssl\x509_vfy.h" />
+    <ClInclude Include="include\PowerVR\OGLES\OGLESTools.h" />
+    <ClInclude Include="include\PowerVR\OGLES\PVRTContext.h" />
+    <ClInclude Include="include\PowerVR\OGLES\PVRTFixedPointAPI.h" />
+    <ClInclude Include="include\PowerVR\OGLES\PVRTglesExt.h" />
+    <ClInclude Include="include\PowerVR\OGLES\PVRTTextureAPI.h" />
+    <ClInclude Include="include\PowerVR\PVRTBackground.h" />
+    <ClInclude Include="include\PowerVR\PVRTBoneBatch.h" />
+    <ClInclude Include="include\PowerVR\PVRTDecompress.h" />
+    <ClInclude Include="include\PowerVR\PVRTError.h" />
+    <ClInclude Include="include\PowerVR\PVRTFixedPoint.h" />
+    <ClInclude Include="include\PowerVR\PVRTGeometry.h" />
+    <ClInclude Include="include\PowerVR\PVRTGlobal.h" />
+    <ClInclude Include="include\PowerVR\PVRTMathTable.h" />
+    <ClInclude Include="include\PowerVR\PVRTMatrix.h" />
+    <ClInclude Include="include\PowerVR\PVRTMemoryFileSystem.h" />
+    <ClInclude Include="include\PowerVR\PVRTMisc.h" />
+    <ClInclude Include="include\PowerVR\PVRTModelPOD.h" />
+    <ClInclude Include="include\PowerVR\PVRTools.h" />
+    <ClInclude Include="include\PowerVR\PVRTPrint3D.h" />
+    <ClInclude Include="include\PowerVR\PVRTPrint3Ddat.h" />
+    <ClInclude Include="include\PowerVR\PVRTQuaternion.h" />
+    <ClInclude Include="include\PowerVR\PVRTResourceFile.h" />
+    <ClInclude Include="include\PowerVR\PVRTShadowVol.h" />
+    <ClInclude Include="include\PowerVR\PVRTSingleton.h" />
+    <ClInclude Include="include\PowerVR\PVRTString.h" />
+    <ClInclude Include="include\PowerVR\PVRTTexture.h" />
+    <ClInclude Include="include\PowerVR\PVRTTrans.h" />
+    <ClInclude Include="include\PowerVR\PVRTTriStrip.h" />
+    <ClInclude Include="include\PowerVR\PVRTVector.h" />
+    <ClInclude Include="include\PowerVR\PVRTVertex.h" />
+    <ClInclude Include="include\win32\include\EGL\egl.h" />
+    <ClInclude Include="include\win32\include\EGL\eglext.h" />
+    <ClInclude Include="include\win32\include\EGL\eglplatform.h" />
+    <ClInclude Include="include\win32\include\GLES\egl.h" />
+    <ClInclude Include="include\win32\include\GLES\gl.h" />
+    <ClInclude Include="include\win32\include\GLES\glext.h" />
+    <ClInclude Include="include\win32\include\GLES\glplatform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\ApplicationEngine.cpp" />
+    <ClCompile Include="code\Camera.cpp" />
+    <ClCompile Include="code\FrameBuffer.cpp" />
+    <ClCompile Include="code\Game2D.cpp" />
+    <ClCompile Include="code\GameBase.cpp" />
+    <ClCompile Include="code\json_reader.cpp" />
+    <ClCompile Include="code\json_value.cpp" />
+    <ClCompile Include="code\json_writer.cpp" />
+    <ClCompile Include="code\Lock.cpp" />
+    <ClCompile Include="code\main.cpp" />
+    <ClCompile Include="code\Mutex.cpp" />
+    <ClCompile Include="code\Renderer.cpp" />
+    <ClCompile Include="code\RenderingEngine.ES2.cpp" />
+    <ClCompile Include="code\RenderingEngineES1.cpp" />
+    <ClCompile Include="code\RenderingEngineES2.cpp" />
+    <ClCompile Include="code\Scene.cpp" />
+    <ClCompile Include="code\Thread.cpp" />
+    <ClCompile Include="code\ThreadUtil.cpp" />
+    <ClCompile Include="code\Timer.cpp" />
+    <ClCompile Include="code\UploadThread.cpp" />
+    <ClCompile Include="code\WebRequest.cpp" />
+    <ClCompile Include="code\WebRequestThreaded.cpp" />
+    <ClCompile Include="code\win32\GLContext.cpp" />
+    <ClCompile Include="code\win32\main.cpp" />
+    <ClCompile Include="code\win32\main_win32.cpp" />
+    <ClCompile Include="code\win32\wgl\GLee.c" />
+    <ClCompile Include="code\win32\wgl\gltools.cpp" />
+    <ClCompile Include="code\win32\wgl\math3d.cpp" />
+    <ClCompile Include="code\win32\wgl\TriangleMesh.cpp" />
+    <ClCompile Include="code\win32\wgl\VBOMesh.cpp" />
+    <ClCompile Include="include\PowerVR\OGLES\PVRTBackground.cpp" />
+    <ClCompile Include="include\PowerVR\OGLES\PVRTglesExt.cpp" />
+    <ClCompile Include="include\PowerVR\OGLES\PVRTPrint3DAPI.cpp" />
+    <ClCompile Include="include\PowerVR\OGLES\PVRTTextureAPI.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTBoneBatch.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTDecompress.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTError.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTFixedPoint.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTGeometry.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTMatrixF.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTMatrixX.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTMisc.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTModelPOD.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTModelPODWriteH.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTPrint3D.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTQuaternionF.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTQuaternionX.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTResourceFile.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTShadowVol.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTString.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTTexture.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTTrans.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTTriStrip.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTVector.cpp" />
+    <ClCompile Include="include\PowerVR\PVRTVertex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="code\win32\wgl\freeglut_static.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
